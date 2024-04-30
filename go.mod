@@ -5,7 +5,7 @@ go 1.17
 replace github.com/fivebinaries/go-cardano-serialization => ./
 
 require (
-	github.com/blockfrost/blockfrost-go v0.1.0
+	github.com/blockfrost/blockfrost-go v0.1.1
 	github.com/btcsuite/btcutil v1.0.2
 	github.com/fxamacker/cbor/v2 v2.4.0
 	github.com/stretchr/testify v1.7.0
