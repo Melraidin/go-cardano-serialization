@@ -21,14 +21,14 @@ func MainNet() *NetworkInfo {
 
 func PreProd() *NetworkInfo {
 	return &NetworkInfo{
-		NetworkId:     0b0010,
+		NetworkId:     0b0000,
 		ProtocolMagic: 1,
 	}
 }
 
 func Preview() *NetworkInfo {
 	return &NetworkInfo{
-		NetworkId:     0b0011,
+		NetworkId:     0b0000,
 		ProtocolMagic: 2,
 	}
 }
