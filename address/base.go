@@ -1,7 +1,7 @@
 package address
 
 import (
-	"github.com/fivebinaries/go-cardano-serialization/internal/bech32"
+	"github.com/fivebinaries/go-cardano-serialization/bech32"
 	"github.com/fivebinaries/go-cardano-serialization/network"
 
 	"github.com/fxamacker/cbor/v2"
@@ -15,7 +15,7 @@ type BaseAddress struct {
 	Stake   StakeCredential
 }
 
-// Bytes returns a  length 57 byte slice represantation of the Address.
+// Bytes returns a length 57 byte slice represantation of the Address.
 func (b *BaseAddress) Bytes() []byte {
 	bytes := make([]byte, 57)
 	bytes[0] = (byte(b.Payment.Kind) << 4) | (byte(b.Stake.Kind) << 5) | (byte(b.Network.NetworkId) & 0xf)

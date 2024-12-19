@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/btcsuite/btcutil/base58"
-	"github.com/fivebinaries/go-cardano-serialization/internal/bech32"
+	"github.com/fivebinaries/go-cardano-serialization/bech32"
 	"github.com/fivebinaries/go-cardano-serialization/network"
 	"github.com/fxamacker/cbor/v2"
 )
